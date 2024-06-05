@@ -2,6 +2,7 @@ package com.gm.collections.arraylist;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.ListIterator;
 
 public class iterates {
@@ -45,6 +46,15 @@ public class iterates {
 
         Iterator iterator = list1.iterator();
         iterator.forEachRemaining(a-> System.out.println(a));
+
+        List<Integer> arrList = new ArrayList<>();
+
+        arrList.add(10);
+        arrList.add(15);
+        arrList.add(20);
+        arrList.add(25);
+
+        arrList.stream().filter(x->x%2==0).forEach(System.out::println);
 
 
     }
