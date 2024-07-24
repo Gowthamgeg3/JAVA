@@ -16,7 +16,7 @@ public  class Main {
 
         //by constructor
 
-        Student student2 = new Student(10,"Boopathi");
+        Student student2 = new Student(10,"G");
         student2.display();
 
 
